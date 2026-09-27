@@ -9,14 +9,16 @@ Furthermore, I wanted to keep my server root in a nested folder, so that Jekyll
 doesn't accidentally, "magically" include files that I didn't want to be shared
 on the website.
 
-This allows me to also leverage top-level scripts to setup the development
-environment; including installing Ruby gems into a virtual environment, and any
-testing scripts that I might have.
+Local gems install into `vendor/gems` (gitignored). Ruby is pinned to 3.3.4
+via [`mise.toml`](mise.toml) / [`.ruby-version`](.ruby-version) to match
+[GitHub Pages](https://pages.github.com/versions/).
 
 ## Local Development
 
-To spin up a development server, simply enter:
+Install [mise](https://mise.jdx.dev/) (or another Ruby 3.3.4 toolchain), then:
 
 ```
 make watch
 ```
+
+The site is available at http://127.0.0.1:4000.
