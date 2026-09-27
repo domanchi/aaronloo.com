@@ -123,6 +123,36 @@
     }
 }
 
+#splash-page .under-construction {
+    width: 90%;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8%;
+
+    color: $white;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+
+    p {
+        margin: 0;
+    }
+
+    p + p {
+        margin-top: 0.35em;
+    }
+
+    @include respond-to(small, portrait) {
+        bottom: 6%;
+        font-size: 0.95rem;
+    }
+}
+
 #splash-page .btn-wrapper {
     $buttonSize: 60px;
 
